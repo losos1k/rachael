@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Life style | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/>
+    <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/>
+    <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/>
+    <!-- the same -->
+    <!-- the CSS for Smooth Div Scroll -->
+    <link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var paragraph = "<h1>LifeStyle</h1>" +
+                "<p>Rachael Watson Photography Inc. offers a wide range of portrait sessions to clients " +
+                "including, infant, maternity, children, seniors, families or any thing else you can " +
+                "think of! If you want it captured we can make it happen.</p>" +
+                "<p>It's one of the things I love about being a professional photographer, getting to " +
+                "walk along side families from the start and getting to watch them grow. I don't " +
+                "want to just do one photo shoot for you, I want to capture all the moments that " +
+                "are special to you, from the very beginning, moment to moment.</p>";
+        var text = "<h3> Portrait Packages:</h3><h4>Gold Portrait Package:</h4>" +
+                "<ul><li>60 minutes with one Photographer</li><li>Option of multiple locations</li>" +
+                "<li>Sharable Password Protected Online Gallery</li><li>25 of the best images on High Resolution CD</li>" +
+                "<li>Photo Release</li><li>$75 dollar photo credit toward album, prints, whole CD or other products</li>" +
+                "<li>Free Album Design</li></ul><h4>Silver Portrait Package:</h4><ul><li>45 minutes with one Photographer</li>" +
+                "<li>Option of multiple locations</li><li>Sharable Password Protected Online Gallery</li>" +
+                "<li>15 of the best images on High Resolution CD</li><li>Photo Release</li>" +
+                "<li>$40 dollar photo credit toward album, prints, whole CD or other products</li>" +
+                "<li>Free Album Design</li></ul><h4>Bronze Portrait Package:</h4><ul>" +
+                "<li>30 minutes with one Photographer</li><li>One location within 10 miles of area code 60510</li>" +
+                "<li>Sharable Password Protected Online Gallery</li><li>10 of the best images on High Resolution CD</li>" +
+                "<li>Photo Release</li><li>$20 dollar photo credit toward album, prints, whole CD or other products</li>" +
+                "<li>Free Album Design</li></ul><p>For more information contact Rachael Watson at:</p>" +
+                "<p>Email: <a href=\"mailto:inquiries@rachaelwatsonphotography.com\" target=\"_blank\">" +
+                "inquiries@rachaelwatsonphotography.com</a><br/>Phone: (630) 697-7525</p>";
+        function lsText(){
+            $('#text').html(paragraph);
+        }
+        function pkText(){
+            $('#text').html(text);
+        }
+    </script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body ondragstart="return false" onload="lsText();">
+<header>
+    <div class="cross"></div>
+    <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <a href="#" id="mute" class="glyphicon glyphicon-volume-up mute" onclick="mute();"></a>
+        <!-- link to your email -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id='active'>
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='specials.html'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+        <div class="row">
+            <audio id="audio" autoplay loop>
+                <source src="audio/cedaravenue_96k.ogg" type="audio/ogg; codecs=vorbis">
+                <source src="audio/cedaravenue_96k.mp3">
+            </audio>
+            <div class="col-sm-3 black">
+                <a href="life_style.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="lsText();"><span class="but">LifeStyle</span></button>
+                </a>
+                <a href="maternity.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="pkText();"><span class="but">Maternity</span></button>
+                </a>
+                <a href="newborn.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="pkText();"><span class="but">Newborn</span></button>
+                </a>
+                <a href="children.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="pkText();"><span class="but">Children</span></button>
+                </a>
+                <a href="seniors.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="pkText();"><span class="but">Seniors</span></button>
+                </a>
+                <a href="families.html" target="lifestyle">
+                    <button type="button" class="btn btn-ls" onclick="pkText();"><span class="but">Families</span></button>
+                </a>
+            </div>
+            <div class="col-sm-9">
+                <iframe name="lifestyle" src="life_style.html" frameborder="0" class="frame"></iframe>
+            </div>
+        </div>
+        <article class="padd" id="text">
+
+        </article>
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<script type="text/javascript">
+    disableSelection(document.body);
+    var muted = false;
+    function mute() {
+        if(muted) {
+            document.getElementById('audio').volume=1;
+            $('.mute').removeClass('glyphicon-volume-off').addClass('glyphicon-volume-up');
+            muted = false;
+        } else {
+            document.getElementById('audio').volume=0;
+            $('.mute').removeClass('glyphicon-volume-up').addClass('glyphicon-volume-off');
+            muted = true;
+        }
+    }
+</script>
+</body>
+</html>

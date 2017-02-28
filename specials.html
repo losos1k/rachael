@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current specials | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/> <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/> <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- the same -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body ondragstart="return false" onselectstart="return false">
+<header>
+    <div class="cross"></div> <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <!-- link to your email, if you need to change it, edit value of the href parameter like "mailto:your@new.mail" -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook. now here link to your flickr. you should put the right one as value of href parameter -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id="dropdown">
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li id='active'><a href='#'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+        <img src="images/special.jpg" alt="current specials" class="special"/>
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<script type="text/javascript">
+    disableSelection(document.body)
+</script>
+</body>
+</html>

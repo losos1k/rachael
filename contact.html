@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/> <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/> <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- the same -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/formatter.min.js" type="text/javascript"></script>
+    <script src="js/jquery.formatter.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- script for form validation -->
+    <script type="text/javascript">
+        function validate(form) {
+            $('#name').removeClass('has-error');
+            $('#email').removeClass('has-error');
+            $('#phoneNumber').removeClass('has-error');
+            $('#how').removeClass('has-error');
+            $('#message').removeClass('has-error');
+            var success = true;
+            if (form.contact_name.value == "") {
+                $('#name').addClass('has-error');
+                success = false;
+            }
+            if (form.contact_email.value == "") {
+                $('#email').addClass('has-error');
+                success = false;
+            }
+            if (form.phone_number.value == "(   )    -    ") {
+                $('#phoneNumber').addClass('has-error');
+                success = false;
+            }
+            if (form.contact_hear.value == "") {
+                $('#how').addClass('has-error');
+                success = false;
+            }
+            if (form.contact_message.value == "") {
+                $('#message').addClass('has-error');
+                success = false;
+            }
+            return success;
+        }
+    </script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<header>
+    <div class="cross"></div> <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <!-- link to your email -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id="dropdown">
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li id='active'><a href='#'>Contact</a></li>
+            <li><a href='specials.html'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+        <h1>Questions? Contact us.</h1>
+        <!-- here is complex contact form -->
+        <div class="row">
+            <form method="POST" onsubmit="return validate(this);" action="mail.php" id="contact-form" role="form"
+                  class="col-sm-5">
+                <div class="form-group" id="name">
+                    <label class="control-label" for="input1">Name</label>
+                    <input type="text" name="contact_name" class="form-control" id="input1"
+                           placeholder="Your name">
+                </div>
+                <div class="form-group" id="email">
+                    <label class="control-label" for="input2">Email Address</label>
+                    <input type="email" name="contact_email" class="form-control" id="input2"
+                           placeholder="Your email address">
+                </div>
+                <div class="form-group" id="phoneNumber">
+                    <label class="control-label" for="phone">Phone number</label>
+                    <input type="tel" name="phone_number" class="form-control" id="phone" maxlength="14">
+
+                    <script type="text/javascript">
+                        $('#phone').formatter({
+                            'pattern': '({{999}}) {{999}}-{{9999}}',
+                            'persistent': true
+                        });
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Prefered form of contact</label><br/>
+                    <input type="radio" value="ph" name="radio">&nbsp;Phone<br/>
+                    <input type="radio" value="em" name="radio" checked>&nbsp;E-mail
+                </div>
+                <div class="form-group" id="how">
+                    <label class="control-label" for="input4">How did you hear about us?</label>
+                    <input type="text" name="contact_hear" class="form-control" id="input4"
+                           placeholder="">
+                </div>
+                <div class="form-group" id="message">
+                    <label class="control-label" for="input3">Message</label>
+                    <textarea name="contact_message" class="form-control" id="input3" rows="5"
+                              placeholder="The message you want to send to me."></textarea>
+                </div>
+                <input type="hidden" name="save" value="contact">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <div class="col-sm-7">
+                <img src="images/about.jpg"/>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<script type="text/javascript">
+    disableSelection(document.body)
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css"/> <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/> <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- the same -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body ondragstart="return false">
+<header>
+    <div class="cross"></div> <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <!-- link to your email -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id='active'>
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='specials.html'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+        <a name="top"></a>
+
+        <h1>Make Your Own Words of Inspiration</h1>
+        <br/>
+
+        <div id="links">
+            <h2>R Options</h2> <!-- group of letters name -->
+
+            <figure class="letter"> <!-- start of one letter -->
+                <a href="images/letters_big/IMG_0565.jpg" title="IMG_0565" data-gallery> <!-- link to bigger photo -->
+                    <img src="images/letters/IMG_0565.jpg"/> <!-- thumbnail -->
+                </a>
+                <figcaption>IMG_0565</figcaption>
+                <!-- name of photo -->
+            </figure>
+            <!-- end of letter -->
+            <figure class="letter">
+                <a href="images/letters_big/DSCN0165.jpg" title="A_0165" data-gallery>
+                    <img src="images/letters/DSCN0165.jpg"/>
+                </a>
+                <figcaption>A_0165</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0102.jpg" title="A_0102" data-gallery>
+                    <img src="images/letters/IMG_0102.jpg"/>
+                </a>
+                <figcaption>A_0102</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0159.jpg" title="A_0159" data-gallery>
+                    <img src="images/letters/IMG_0159.jpg"/>
+                </a>
+                <figcaption>A_0159</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1300.jpg" title="A_1300" data-gallery>
+                    <img src="images/letters/IMG_1300.jpg"/>
+                </a>
+                <figcaption>A_1300</figcaption>
+            </figure>
+
+            <h2>S Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0568.jpg" title="IMG_0568" data-gallery>
+                    <img src="images/letters/IMG_0568.jpg"/>
+                </a>
+                <figcaption>IMG_0568</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0574.jpg" title="IMG_0574" data-gallery>
+                    <img src="images/letters/IMG_0574.jpg"/>
+                </a>
+                <figcaption>IMG_0574</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/DSCN0183.jpg" title="A_0183" data-gallery>
+                    <img src="images/letters/DSCN0183.jpg"/>
+                </a>
+                <figcaption>A_0183</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0060.jpg" title="A_0060" data-gallery>
+                    <img src="images/letters/IMG_0060.jpg"/>
+                </a>
+                <figcaption>A_0060</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0110.jpg" title="A_0110" data-gallery>
+                    <img src="images/letters/IMG_0110.jpg"/>
+                </a>
+                <figcaption>A_0110</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0212.jpg" title="A_0212" data-gallery>
+                    <img src="images/letters/IMG_0212.jpg"/>
+                </a>
+                <figcaption>A_0212</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1299.jpg" title="A_1299" data-gallery>
+                    <img src="images/letters/IMG_1299.jpg"/>
+                </a>
+                <figcaption>A_1299</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1337.jpg" title="A_1337" data-gallery>
+                    <img src="images/letters/IMG_1337.jpg"/>
+                </a>
+                <figcaption>A_1337</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1388.jpg" title="A_1388" data-gallery>
+                    <img src="images/letters/IMG_1388.jpg"/>
+                </a>
+                <figcaption>A_1388</figcaption>
+            </figure>
+
+            <h2>T Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0114_3.jpg" title="A_0114_3" data-gallery>
+                    <img src="images/letters/IMG_0114_3.jpg"/>
+                </a>
+                <figcaption>A_0114_3</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0157_2.jpg" title="A_0157_2" data-gallery>
+                    <img src="images/letters/IMG_0157_2.jpg"/>
+                </a>
+                <figcaption>A_0157_2</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1325.jpg" title="A_1325" data-gallery>
+                    <img src="images/letters/IMG_1325.jpg"/>
+                </a>
+                <figcaption>A_1325</figcaption>
+            </figure>
+
+            <h2>U Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1319.jpg" title="A_1319" data-gallery>
+                    <img src="images/letters/IMG_1319.jpg"/>
+                </a>
+                <figcaption>A_1319</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1425.jpg" title="A_1425" data-gallery>
+                    <img src="images/letters/IMG_1425.jpg"/>
+                </a>
+                <figcaption>A_1425</figcaption>
+            </figure>
+
+
+            <h2>V Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0547.jpg" title="IMG_0547" data-gallery>
+                    <img src="images/letters/IMG_0547.jpg"/>
+                </a>
+                <figcaption>IMG_0547</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0099.jpg" title="A_0099" data-gallery>
+                    <img src="images/letters/IMG_0099.jpg"/>
+                </a>
+                <figcaption>A_0099</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0127.jpg" title="A_0127" data-gallery>
+                    <img src="images/letters/IMG_0127.jpg"/>
+                </a>
+                <figcaption>A_0127</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/DSCN0132.jpg" title="A_0132" data-gallery>
+                    <img src="images/letters/DSCN0132.jpg"/>
+                </a>
+                <figcaption>A_0132</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0173_2.jpg" title="A_0173_2" data-gallery>
+                    <img src="images/letters/IMG_0173_2.jpg"/>
+                </a>
+                <figcaption>A_0173_2</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1259.jpg" title="A_1259" data-gallery>
+                    <img src="images/letters/IMG_1259.jpg"/>
+                </a>
+                <figcaption>A_1259</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1330.jpg" title="A_1330" data-gallery>
+                    <img src="images/letters/IMG_1330.jpg"/>
+                </a>
+                <figcaption>A_1330</figcaption>
+            </figure>
+
+            <h2>W Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0004.jpg" title="A_0004" data-gallery>
+                    <img src="images/letters/IMG_0004.jpg"/>
+                </a>
+                <figcaption>A_0004</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1255.jpg" title="A_1255" data-gallery>
+                    <img src="images/letters/IMG_1255.jpg"/>
+                </a>
+                <figcaption>A_1255</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1260.jpg" title="A_1260" data-gallery>
+                    <img src="images/letters/IMG_1260.jpg"/>
+                </a>
+                <figcaption>A_1260</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1264.jpg" title="A_1264" data-gallery>
+                    <img src="images/letters/IMG_1264.jpg"/>
+                </a>
+                <figcaption>A_1264</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1267.jpg" title="A_1267" data-gallery>
+                    <img src="images/letters/IMG_1267.jpg"/>
+                </a>
+                <figcaption>A_1267</figcaption>
+            </figure>
+
+            <h2>X Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0556.jpg" title="IMG_0556" data-gallery>
+                    <img src="images/letters/IMG_0556.jpg"/>
+                </a>
+                <figcaption>IMG_0556</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0562.jpg" title="IMG_0562" data-gallery>
+                    <img src="images/letters/IMG_0562.jpg"/>
+                </a>
+                <figcaption>IMG_0562</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0104_2.jpg" title="A_0104_2" data-gallery>
+                    <img src="images/letters/IMG_0104_2.jpg"/>
+                </a>
+                <figcaption>A_0104_2</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0155.jpg" title="A_0155" data-gallery>
+                    <img src="images/letters/IMG_0155.jpg"/>
+                </a>
+                <figcaption>A_0155</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0208_2.jpg" title="A_0208_2" data-gallery>
+                    <img src="images/letters/IMG_0208_2.jpg"/>
+                </a>
+                <figcaption>A_0208_2</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1314.jpg" title="A_1314" data-gallery>
+                    <img src="images/letters/IMG_1314.jpg"/>
+                </a>
+                <figcaption>A_1314</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1342.jpg" title="A_1342" data-gallery>
+                    <img src="images/letters/IMG_1342.jpg"/>
+                </a>
+                <figcaption>A_1342</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1373.jpg" title="A_1373" data-gallery>
+                    <img src="images/letters/IMG_1373.jpg"/>
+                </a>
+                <figcaption>A_1373</figcaption>
+            </figure>
+
+            <h2>Y Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0553.jpg" title="IMG_0553" data-gallery>
+                    <img src="images/letters/IMG_0553.jpg"/>
+                </a>
+                <figcaption>IMG_0553</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_0600.jpg" title="IMG_0600" data-gallery>
+                    <img src="images/letters/IMG_0600.jpg"/>
+                </a>
+                <figcaption>IMG_0600</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1411.jpg" title="A_1411" data-gallery>
+                    <img src="images/letters/IMG_1411.jpg"/>
+                </a>
+                <figcaption>A_1411</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1428.jpg" title="A_1428" data-gallery>
+                    <img src="images/letters/IMG_1437.jpg"/>
+                </a>
+                <figcaption>A_1437</figcaption>
+            </figure>
+
+            <h2>Z Options</h2>
+
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1311.jpg" title="A_1311" data-gallery>
+                    <img src="images/letters/IMG_1311.jpg"/>
+                </a>
+                <figcaption>A_1311</figcaption>
+            </figure>
+            <figure class="letter">
+                <a href="images/letters_big/IMG_1428.jpg" title="A_1428" data-gallery>
+                    <img src="images/letters/IMG_1428.jpg"/>
+                </a>
+                <figcaption>A_1428</figcaption>
+            </figure>
+
+        </div>
+    </div>
+</main>
+<div class="navbar-art">
+    <nav>
+        <ul>
+            <li><a href="a-h.html">Custom letters A-H</a></li>
+            <li><a href="i-q.html">Custom letters I-Q</a></li>
+            <li><a href="#top">Custom letters R-Z</a></li>
+            <li><a href="pdwords.html">Pre-designed Words</a></li>
+            <li><a href="cuswords.html">Custom Words</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<div id="blueimp-gallery" class="blueimp-gallery"> <!-- in this block comes code of popup gallery -->
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer centered">
+                    <button type="button" class="btn btn-default prev btn-width">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button onclick="grayscale();" class="btn btn-default btn-width">Black and White</button>
+                    <button onclick="normal();" class="btn btn-default btn-width">Color</button>
+                    <button onclick="sepia();" class="btn btn-default btn-width">Sepia</button>
+                    <button type="button" class="btn btn-default next btn-width">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right btn-width"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+<!-- and here comes script for enabling/disabling filters :) -->
+<script type="text/javascript">
+    disableSelection(document.body);
+    function normal() {
+        $('.modal-body').removeClass('grayscale').removeClass('sepia');
+    }
+    function grayscale() {
+        $('.modal-body').removeClass('sepia').addClass('grayscale');
+    }
+    function sepia() {
+        $('.modal-body').removeClass('grayscale').addClass('sepia');
+    }
+</script>
+</body>
+</html>

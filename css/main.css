@@ -1,0 +1,589 @@
+/* set margins and paddings of all this tags equal to zero */
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background-color: #242424;
+    width: 100%;
+    min-width: 960px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* header styles */
+header { /* color, width, height of main header :) */
+    background: #94C5BF; /* set light blue color of header */
+    width: 100%;
+    height: 250px;
+    min-width: 960px;
+}
+
+.cross { /* size, path to picture and position of white cross in header */
+    width: 350px;
+    height: 250px;
+    background: url(../images/cross.png) no-repeat; /* relative path from this file to cross picture */
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    z-index: 0;
+}
+
+.title { /* color, font and position of your logo in header */
+    color: #fff;
+    font-family: 'Journal';
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 2;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-left {
+    display: block;
+    z-index: 2;
+    padding-top: 75px;
+    padding-bottom: 0px;
+    width: 666px;
+    margin: auto;
+}
+
+nav { /* style of <nav></nav> tag, in which placed links to other pages */
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+    z-index: 2;
+}
+
+nav ul { /* style of list of links to other pages, I think there is nothing interesting for you */
+    list-style: none;
+    position: relative;
+    left: 50%;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+nav a { /* actually style of the text in links */
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 10px 15px; /* 10px top and bottom margin and 15px left and right */
+    float: left;
+    color: #fff; /* white */
+    padding: 1px 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav a:hover { /* add bottom border to the links to other pages when mouse over link */
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dashed #fff; /* width, style and color of border */
+}
+
+nav a:active { /* fixes for some browsers */
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:focus { /* fixes for some browsers */
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li#active a { /* style of bottom border of link to current page */
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0;
+}
+
+nav ul li#dropdown:hover a { /* style of bottom border of link to current page */
+    border-bottom: 1px dashed #94C5BF;
+    padding-bottom: 0;
+}
+
+nav ul li#active:hover a { /* style of bottom border of link to current page */
+    border-bottom: 1px dashed #94C5BF;
+    padding-bottom: 0;
+}
+
+.navbar-bottom {
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: normal;
+    color: #000;
+    text-transform: uppercase;
+    margin: 10px 15px; /* 10px top and bottom margin and 15px left and right */
+    float: left;
+    padding: 1px 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-bottom ul li { /* style of list of links to other letters pages */
+    list-style: none;
+    float: left;
+}
+
+.navbar-bottom a { /* actually style of the text in links */
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 10px 15px; /* 10px top and bottom margin and 15px left and right */
+    float: left;
+    color: #333;
+    padding: 1px 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-bottom a:hover { /* add bottom border to the links to other pages when mouse over link */
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-bottom a:active { /* fixes for some browsers */
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-bottom a:focus { /* fixes for some browsers */
+    text-decoration: none;
+    color: #000;
+}
+
+.socials { /* there is nothing interesting too :) styles of social links that are responsible for their location and scrolling animation */
+    position: absolute;
+    top: 10px;
+    right: 15%;
+}
+
+.social-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 0 3px;
+    background-image: url(../images/social.png);
+    -webkit-transition: background 0.5s ease-out;
+    -moz-transition: background 0.5s ease-out;
+    -o-transition: background 0.5s ease-out;
+    transition: background 0.5s ease-out;
+}
+
+.social-item-inner {
+    white-space: nowrap;
+}
+
+.social-mail {background-position: -119px 0;}
+.social-mail:hover {background-position:-119px -40px;}
+
+.social-flickr {background-position:-198px 0;}
+.social-flickr:hover {background-position:-198px -40px;}
+
+.social-facebook {background-position:0px 0;}
+.social-facebook:hover {background-position:0px -40px;}
+
+.social-twitter {background-position:-40px 0;}
+.social-twitter:hover {background-position:-40px -40px;}
+
+.social-instagram {background-position:-79px 0;}
+.social-instagram:hover {background-position:-79px -40px;}
+/* end of header styles */
+
+.container { /* width and the central position of this block */
+    margin: auto;
+    width: 960px;
+}
+
+/* main block styles */
+main {
+    background: #f2f2f2; /* background color */
+    padding: 30px 0; /* 30px top and bottom padding and 0px left and right from container, which width is 960px */
+}
+/* end of main block styles */
+
+/* footer styles */
+footer {
+    background: #242424; /* almost black */
+    padding: 50px 0; /* 50px top and bottom padding and 0px left and right from container, which width is 960px */
+    color: #eee; /* font color */
+    float: left;
+    width: 100%;
+    min-width: 960px;
+}
+/* end of footer styles */
+
+/* portfolio */
+.portfolio-button { /* tabs on portfolio page */
+    font-size: 18px;
+    display: inline-block;
+    padding: 7px 12px;
+    background: #333;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    min-width: 150px;
+    margin-bottom: 15px;
+}
+
+.portfolio-button-side {
+    display: block;
+}
+
+.portfolio-button:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+
+.port {
+    text-align: center;
+}
+
+.cen {
+    height: 250px;
+    width: auto;
+    margin: auto;
+}
+
+.letter {
+    display: inline-block;
+}
+
+.letter img  {
+    height: 250px;
+    width: auto;
+    margin: 10px;
+}
+
+.letter figcaption {
+    text-align: center;
+}
+
+h2 { /* headers on portfolio pages */
+    font-size: 17px;
+    padding: .5em 0 0.8em 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #373737;
+}
+
+.eng > .item > img { /* width of slider on engagement page... */
+    height: 393px;
+    width: auto;
+    margin: auto;
+}
+
+.thumbnails { /* ...and width of thumbnails line */
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+#makeMeScrollable div.scrollableArea * { /* styles for scrollable thumbnails */
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* If you don't want the images in the scroller to be selectable, try the following
+        block of code. It's just a nice feature that prevent the images from
+        accidentally becoming selected/inverted when the user interacts with the scroller. */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.thumb-link:first-child {
+    margin-left: 0px;
+}
+.thumb-link {
+    height: 70px; /* height of thumbnails */
+    margin: 5px 1px; /* margins from top-bottom and left-right */
+}
+/* LifeStyle */
+.ul-ls { /* left margin for list on lifestyle page */
+    margin-left: 20px;
+}
+
+.ls > .item > img { /* height of slider on lifestyle page */
+    height: 420px;
+    width: auto;
+    margin: auto;
+}
+
+.lifes > .item > img { /* height of slider on lifestyle page */
+    height: 256px;
+    width: auto;
+    margin: auto;
+}
+
+.thumbnails {
+    width: 100%;
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+    margin: 2px;
+}
+
+/* Contact page */
+.tnx {
+    height: 80%;
+    min-width: 800px;
+}
+
+
+/* filters for photos */
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(filters.svg#grayscale); /* Firefox 4+ */
+    filter: gray; /* IE 6-9 */
+}
+
+.sepia {
+    filter: url(filters.svg#old-timey);
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+    filter: alpha(opacity=50);
+    zoom:1;
+}
+
+/* Custom Words */
+#controls { /* buttons on custom words page */
+    padding: 10px;
+    width: 420px;
+    margin: auto;
+}
+
+#aim { /* min and max height of space for selected letters */
+    min-height: 155px;
+    max-height: 305px;
+}
+
+#aim img { /* height of selected letters */
+    margin: 1px;
+    height: 150px;
+}
+
+.nav-tabs > li > a { /* padding of links in tabs */
+    padding: 10px;
+}
+
+.words figure {
+    display: inline-block;
+}
+
+.words img {
+    display: inline-block;
+}
+
+.words figcaption {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.navbar-art {
+    background: #94C5BF;
+    width: 100%;
+    height: 50px;
+    min-width: 960px;
+}
+.controls {
+    margin-top: 10px;
+}
+.controls button{
+    margin-top: 10px;
+}
+.special {
+    width: inherit;
+    margin: auto;
+}
+
+.btn-ls{
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 0;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+.btn-ls:hover{
+    border-color: #000000;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-ls:focus{
+    background-color: #333;
+    color: #ffffff;
+}
+.btn{
+    font-size: 1.2em;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.bbtn{
+    min-width: 300px;
+    margin-bottom: 15px;
+}
+
+.tnx{
+    width: 780px;
+    margin: auto;
+}
+.tnx img{
+    width: 130px;
+    height: auto;
+}
+.column{
+    width: 111px;
+}
+.column a{
+    height: 74px;
+}
+.about{
+    min-height: 370px;
+}
+.column-about{
+    width: 140px;
+    float: left;
+}
+.column-about a{
+    height: 100px;
+}
+.column-about img{
+    width: 130px;
+    height: auto;
+}
+.mid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wedd{
+    font-family: "Journal";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 1em;
+}
+.padd{
+    max-width: 700px;
+    line-height: 18px;
+    text-align: justify;
+}
+.padd h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.padd ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.padd h4{
+    color: lightseagreen;
+    padding-top: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ul-2{
+    margin-top: 0;
+    margin-left: 20px;
+}
+.mute{
+    font-size: 32px;
+    color: #cce3e0;
+}
+.mute:hover{
+    text-decoration: none;
+    color: #cce3e0;
+}
+.mute:visited{
+    text-decoration: none;
+    color: #cce3e0;
+}
+.frame{
+    width: 720px;
+    height: 500px;
+    overflow: hidden;
+}
+iframe{
+    overflow: hidden;
+}
+.grey{
+    min-width: 650px;
+    width: 700px;
+    background: #f2f2f2;
+}
+.grey main{
+    padding: 0;
+    margin: 0;
+}
+iframe html,body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.fill{
+    width: 100%;
+}
+.caption-about{
+    text-align: center;
+    margin-top: 10px;
+}
+.space{
+    margin-bottom: 1em;
+}

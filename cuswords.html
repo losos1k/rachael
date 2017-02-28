@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Words | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/> <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/> <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/> <!-- the same -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body ondragstart="return false">
+<header>
+    <div class="cross"></div> <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <!-- link to your email -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id='active'>
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='specials.html'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+    <article>
+        <h1>Design Your Own Custom Words</h1>
+
+        <p>Do you have something personal you would like to say? A word you want to share with a friend or loved one?
+            Design it your own here!</p>
+
+        <p>Simply click the letter you wish to use one at a time. Change your mind? Want to design their name or
+            anniversary instead? You can use the delete button to delete the letters you have selected and start
+            over.</p>
+
+        <p>When you have finished selecting the letters or numbers you want you can finish off your design by deciding
+            what you like best: black and white, color or sepia.</p>
+
+        <p>Remember designs can be purchased in 4x6, 5x7 or 8x10.</p>
+    </article>
+        <div id="aim"> <!-- here placed places for selected letters -->
+            <img id="0" src="images/fish.jpg" alt=""/>
+            <img id="1" src="images/fish.jpg" alt=""/>
+            <img id="2" src="images/fish.jpg" alt=""/>
+            <img id="3" src="images/fish.jpg" alt=""/>
+            <img id="4" src="images/fish.jpg" alt=""/>
+            <img id="5" src="images/fish.jpg" alt=""/>
+            <img id="6" src="images/fish.jpg" alt=""/>
+            <img id="7" src="images/fish.jpg" alt=""/>
+            <img id="8" src="images/fish.jpg" alt=""/>
+            <img id="9" src="images/fish.jpg" alt=""/>
+            <img id="10" src="images/fish.jpg" alt=""/>
+            <img id="11" src="images/fish.jpg" alt=""/>
+            <img id="12" src="images/fish.jpg" alt=""/>
+            <img id="13" src="images/fish.jpg" alt=""/>
+        </div>
+        <div id="controls"> <!-- buttons -->
+            <button id="bs" class="btn btn-default btn-width">Delete</button>
+            <button onclick="grayscale();" class="btn btn-default btn-width">Black and White</button>
+            <button onclick="normal();" class="btn btn-default btn-width">Color</button>
+            <button onclick="sepia();" class="btn btn-default btn-width">Sepia</button>
+        </div>
+        <ul class="nav nav-tabs"> <!-- tabs with letters and 0-9 -->
+            <li class="active"><a href="#a" data-toggle="tab">A</a></li>
+            <li><a href="#b" data-toggle="tab">B</a></li>
+            <li><a href="#c" data-toggle="tab">C</a></li>
+            <li><a href="#d" data-toggle="tab">D</a></li>
+            <li><a href="#e" data-toggle="tab">E</a></li>
+            <li><a href="#f" data-toggle="tab">F</a></li>
+            <li><a href="#g" data-toggle="tab">G</a></li>
+            <li><a href="#h" data-toggle="tab">H</a></li>
+            <li><a href="#i" data-toggle="tab">I</a></li>
+            <li><a href="#j" data-toggle="tab">J</a></li>
+            <li><a href="#k" data-toggle="tab">K</a></li>
+            <li><a href="#l" data-toggle="tab">L</a></li>
+            <li><a href="#m" data-toggle="tab">M</a></li>
+            <li><a href="#n" data-toggle="tab">N</a></li>
+            <li><a href="#o" data-toggle="tab">O</a></li>
+            <li><a href="#p" data-toggle="tab">P</a></li>
+            <li><a href="#q" data-toggle="tab">Q</a></li>
+            <li><a href="#r" data-toggle="tab">R</a></li>
+            <li><a href="#s" data-toggle="tab">S</a></li>
+            <li><a href="#t" data-toggle="tab">T</a></li>
+            <li><a href="#u" data-toggle="tab">U</a></li>
+            <li><a href="#v" data-toggle="tab">V</a></li>
+            <li><a href="#w" data-toggle="tab">W</a></li>
+            <li><a href="#x" data-toggle="tab">X</a></li>
+            <li><a href="#y" data-toggle="tab">Y</a></li>
+            <li><a href="#z" data-toggle="tab">Z</a></li>
+            <li><a href="#0-9" data-toggle="tab">0-9</a></li>
+        </ul>
+
+        <div class="tab-content"> <!-- in blocks with that class placed photos of letters -->
+            <div class="tab-pane fade in active" id="a" id="imgs">
+                <h2>A Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0590.jpg"/>
+                    <figcaption>IMG_0590</figcaption>
+                </figure>
+
+                <figure class="letter">
+                    <img src="images/letters/DSCN0145.jpg"/>
+                    <figcaption>A_0145</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0160.jpg"/>
+                    <figcaption>A_0160</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0020.jpg"/>
+                    <figcaption>A_0020</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1349.jpg"/>
+                    <figcaption>A_1349</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1360.jpg"/>
+                    <figcaption>A_1360</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1366.jpg"/>
+                    <figcaption>A_1366</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1386.jpg"/>
+                    <figcaption>A_1386</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1420.jpg"/>
+                    <figcaption>A_1420</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="b">
+                <h2>B Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0596.jpg"/>
+                    <figcaption>IMG_0596</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0136.jpg"/>
+                    <figcaption>A_0136</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1279.jpg"/>
+                    <figcaption>A_1279</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1434.jpg"/>
+                    <figcaption>A_1434</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="c">
+                <h2>C Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0563.jpg"/>
+                    <figcaption>IMG_0563</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0166.jpg"/>
+                    <figcaption>A_0166</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1419.jpg"/>
+                    <figcaption>A_1419</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="d">
+                <h2>D Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0579.jpg"/>
+                    <figcaption>IMG_0579</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0220.jpg"/>
+                    <figcaption>A_0220</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0061.jpg"/>
+                    <figcaption>A_0061</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0062.jpg"/>
+                    <figcaption>A_0062</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1301.jpg"/>
+                    <figcaption>A_1301</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1421.jpg"/>
+                    <figcaption>A_1421</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="e">
+                <h2>E Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/DSCN0130.jpg"/>
+                    <figcaption>A_0130</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0184.jpg"/>
+                    <figcaption>A_0184</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0178.jpg"/>
+                    <figcaption>A_0178</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="f">
+                <h2>F Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/DSCN0157.jpg"/>
+                    <figcaption>A_0157</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0141_2.jpg"/>
+                    <figcaption>A_0141_2</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="g">
+                <h2>G Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0053.jpg"/>
+                    <figcaption>A_0053</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1440.jpg"/>
+                    <figcaption>A_1440</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="h">
+                <h2>H Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0575.jpg"/>
+                    <figcaption>IMG_0575</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0014.jpg"/>
+                    <figcaption>A_0014</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0059.jpg"/>
+                    <figcaption>A_0059</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1416.jpg"/>
+                    <figcaption>A_1416</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="i">
+                <h2>I Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0554.jpg"/>
+                    <figcaption>IMG_0554</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1308.jpg"/>
+                    <figcaption>IMG_1308</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1429.jpg"/>
+                    <figcaption>IMG_1429</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="j">
+                <h2>J Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0595.jpg"/>
+                    <figcaption>IMG_0595</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0025_2.jpg"/>
+                    <figcaption>A_0025_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0058.jpg"/>
+                    <figcaption>A_0058</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0064.jpg"/>
+                    <figcaption>A_0064</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1395.jpg"/>
+                    <figcaption>A_1395</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="k">
+                <h2>K Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0564.jpg"/>
+                    <figcaption>IMG_0564</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0200_2.jpg"/>
+                    <figcaption>A_0200_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1295.jpg"/>
+                    <figcaption>A_1295</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1352.jpg"/>
+                    <figcaption>A_1352</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1410.jpg"/>
+                    <figcaption>A_1410</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="l">
+                <h2>L Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/DSCN0151.jpg"/>
+                    <figcaption>A_0151</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0211_2.jpg"/>
+                    <figcaption>A_0211_2</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="m">
+                <h2>M Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_1304.jpg"/>
+                    <figcaption>A_1304</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1439.jpg"/>
+                    <figcaption>A_1439</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="n">
+                <h2>N Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_1296.jpg"/>
+                    <figcaption>A_1296</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1328.jpg"/>
+                    <figcaption>IMG_1328</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="o">
+                <h2>O Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0584.jpg"/>
+                    <figcaption>IMG_0584</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0588.jpg"/>
+                    <figcaption>IMG_0588</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0131.jpg"/>
+                    <figcaption>A_0131</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0131_2.jpg"/>
+                    <figcaption>A_0131_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0187.jpg"/>
+                    <figcaption>A_0187</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1270.jpg"/>
+                    <figcaption>A_1270</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1290.jpg"/>
+                    <figcaption>A_1290</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1408.jpg"/>
+                    <figcaption>A_1408</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="p">
+                <h2>P Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0582.jpg"/>
+                    <figcaption>IMG_0582</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0583.jpg"/>
+                    <figcaption>IMG_0583</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0591.jpg"/>
+                    <figcaption>IMG_0591</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0163.jpg"/>
+                    <figcaption>A_0163</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0120_3.jpg"/>
+                    <figcaption>A_0120_3</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0128_2.jpg"/>
+                    <figcaption>A_0128_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0185.jpg"/>
+                    <figcaption>A_0185</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1285.jpg"/>
+                    <figcaption>A_1285</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1402.jpg"/>
+                    <figcaption>A_1402</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1413.jpg"/>
+                    <figcaption>A_1413</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="q">
+                <h2>Q Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0103_3.jpg"/>
+                    <figcaption>A_0103_3</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1423.jpg"/>
+                    <figcaption>A_1423</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="r">
+                <h2>R Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0565.jpg"/>
+                    <figcaption>IMG_0565</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0165.jpg"/>
+                    <figcaption>A_0165</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0102.jpg"/>
+                    <figcaption>A_0102</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0159.jpg"/>
+                    <figcaption>A_0159</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1300.jpg"/>
+                    <figcaption>A_1300</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="s">
+                <h2>S Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0568.jpg"/>
+                    <figcaption>IMG_0568</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0574.jpg"/>
+                    <figcaption>IMG_0574</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0183.jpg"/>
+                    <figcaption>A_0183</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0060.jpg"/>
+                    <figcaption>A_0060</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0110.jpg"/>
+                    <figcaption>A_0110</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0212.jpg"/>
+                    <figcaption>A_0212</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1299.jpg"/>
+                    <figcaption>A_1299</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1337.jpg"/>
+                    <figcaption>A_1337</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1388.jpg"/>
+                    <figcaption>A_1388</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="t">
+                <h2>T Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0114_3.jpg"/>
+                    <figcaption>A_0114_3</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0157_2.jpg"/>
+                    <figcaption>A_0157_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1325.jpg"/>
+                    <figcaption>IMG_1325</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="u">
+                <h2>U Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_1319.jpg"/>
+                    <figcaption>A_1319</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1425.jpg"/>
+                    <figcaption>A_1425</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="v">
+                <h2>V Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0547.jpg"/>
+                    <figcaption>IMG_0547</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0099.jpg"/>
+                    <figcaption>A_0099</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0127.jpg"/>
+                    <figcaption>A_0127</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/DSCN0132.jpg"/>
+                    <figcaption>A_0132</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0173_2.jpg"/>
+                    <figcaption>A_0173_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1259.jpg"/>
+                    <figcaption>A_1259</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1330.jpg"/>
+                    <figcaption>A_1330</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="w">
+                <h2>W Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0004.jpg"/>
+                    <figcaption>A_0004</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1255.jpg"/>
+                    <figcaption>A_1255</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1260.jpg"/>
+                    <figcaption>A_1260</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1264.jpg"/>
+                    <figcaption>A_1264</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1267.jpg"/>
+                    <figcaption>A_1267</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="x">
+                <h2>X Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0556.jpg"/>
+                    <figcaption>IMG_0556</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0562.jpg"/>
+                    <figcaption>IMG_0562</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0104_2.jpg"/>
+                    <figcaption>A_0104_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0155.jpg"/>
+                    <figcaption>A_0155</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0208_2.jpg"/>
+                    <figcaption>A_0208_2</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1314.jpg"/>
+                    <figcaption>A_1314</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1342.jpg"/>
+                    <figcaption>A_1342</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1373.jpg"/>
+                    <figcaption>A_1373</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="y">
+                <h2>Y Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_0553.jpg"/>
+                    <figcaption>IMG_0553</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_0600.jpg"/>
+                    <figcaption>IMG_0600</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1411.jpg"/>
+                    <figcaption>A_1411</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1437.jpg"/>
+                    <figcaption>A_1437</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="z">
+                <h2>Z Options</h2>
+
+                <figure class="letter">
+                    <img src="images/letters/IMG_1311.jpg"/>
+                    <figcaption>A_1311</figcaption>
+                </figure>
+                <figure class="letter">
+                    <img src="images/letters/IMG_1428.jpg"/>
+                    <figcaption>A_1428</figcaption>
+                </figure>
+            </div>
+            <div class="tab-pane fade" id="0-9">
+                <h2>0-9 Options</h2>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- script for letters selection/deletion -->
+<script type="text/javascript">
+    var id=0;
+
+    $("#bs").prop("disabled", true);
+
+    $("figure img").click(function(){
+        if(id<14) {
+            $("#"+id).attr("src", $(this).attr("src"));
+            id++;
+            $("#bs").prop("disabled", false);
+        }
+    });
+
+    $("#bs").click(function(){
+        if(id<=14){
+            id--;
+            $("#"+id).attr("src", "images/fish.jpg");
+        }
+
+        if(id==0) {
+            $("#bs").prop("disabled", true);
+        }
+    });
+
+</script>
+<div class="navbar-art">
+    <nav>
+        <ul>
+            <li><a href="a-h.html">Custom letters A-H</a></li>
+            <li><a href="i-q.html">Custom letters I-Q</a></li>
+            <li><a href="r-z.html">Custom letters R-Z</a></li>
+            <li><a href="pdwords.html">Pre-designed Words</a></li>
+            <li><a href="#top">Custom Words</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<script type="text/javascript">
+    disableSelection(document.body);
+    function normal() {
+        $('#aim').removeClass('grayscale').removeClass('sepia');
+    }
+    function grayscale() {
+        $('#aim').removeClass('sepia').addClass('grayscale');
+    }
+    function sepia() {
+        $('#aim').removeClass('grayscale').addClass('sepia');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | Rachael Watson Photography</title> <!-- defines a title in the browser tab/window/toolbar -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <!-- relative path from this .html to main.css styles file -->
+    <link rel="stylesheet" href="css/font.css" type="text/css"/>
+    <!-- relative path from this .html to font.css styles file -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/>
+    <!-- link that enables right layout of this font on this page -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic'
+          rel='stylesheet' type='text/css'/>
+    <!-- the same -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/protection.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.0s.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body ondragstart="return false">
+<header>
+    <div class="cross"></div>
+    <!-- in this block inserted cross picture from main.css -->
+    <div class="socials"> <!-- block with social links -->
+        <!-- link to your email -->
+        <a
+                class="social-item social-mail"
+                href="mailto:inquiries@rachaelwatsonphotography.com"
+                target="_blank">
+            <span class="social-item-inner"></span>
+        </a>
+        <!-- link to facebook -->
+        <a
+                class='social-item social-facebook'
+                href='https://www.facebook.com/rachaelwatsonphotography323'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- flickr -->
+        <a
+                class='social-item social-flickr'
+                href='http://www.flickr.com/photos/108822725@N07/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+        <!-- and instagram -->
+        <a
+                class='social-item social-instagram'
+                href='http://instagram.com/rwatson323/'
+                target='_blank'>
+            <span class='social-item-inner'></span>
+        </a>
+    </div>
+    <!-- here is your logo -->
+    <h1 class="title">Rachael Watson Photography Inc.</h1>
+    <nav> <!-- sites navigation -->
+        <ul>
+            <!-- if you want to add some links to other new pages you must add <li><a href='link_to_new_page.html'>Name of page</a></li> below -->
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About & Giving back</a></li>
+            <li id="dropdown">
+                <div class="dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="engagement.html">Engagement & Couples</a></li>
+                        <li><a href="lifestyle.html">LifeStyle</a></li>
+                        <li class="dropdown-art">
+                            <a href="art.html">Art</a>
+                            <ul class="dropdown-art-menu">
+                                <li><a href="a-h.html">Brows custom letters <b>A-H</b></a></li>
+                                <li><a href="i-q.html">Brows custom letters <b>I-Q</b></a></li>
+                                <li><a href="r-z.html">Brows custom letters <b>R-Z</b></a></li>
+                                <li><a href="pdwords.html">Pre-designed Words</a></li>
+                                <li><a href="cuswords.html">Design your own custom Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='#'>Client area</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='specials.html'>Current specials</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header -->
+
+<!-- light gray block -->
+<main>
+    <div class="container">
+        <h3 class="space">About Rachael & Rachael Watson Photography Inc.</h3>
+        <!-- you may put here new photos by adding <img src="images/filename.jpg" alt=""/> below but we must to work with its layout when we'll have more photos -->
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- when there will be a lot of pictures add id="makeMeScrollable" to add horisontal scroll of thumbnails like on lifestyle page -->
+                <div class="column-about">
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="0"><img
+                            src="images/about/01.jpg"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="3"><img
+                            src="images/about/04.jpg" class="mid"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="6"><img
+                            src="images/about/06.jpg"/></a>
+                </div>
+                <div class="column-about">
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="1"><img
+                            src="images/about/02.jpg"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="4"><img
+                            src="images/about/05.jpg" class="mid"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="7"><img
+                            src="images/about/08.jpg"/></a>
+                </div>
+                <div class="column-about">
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="2"><img
+                            src="images/about/03.jpg"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="5"><img
+                            src="images/about/09.jpg" class="mid"/></a>
+                    <a href="#" data-target="#carousel-example-generic" data-slide-to="8"><img
+                            src="images/about/07.jpg"/></a>
+                </div>
+            </div>
+
+            <div id="carousel-example-generic" class="carousel slide col-sm-6" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner about">
+                    <div class="item active">
+                        <img src="images/about/01.jpg">
+                        <div class="caption-about">
+                            This is me, Rachael Watson, Hi There!
+                        </div>
+                    </div>
+                    <div class="item"> <!-- ...copy that block... -->
+                        <img src="images/about/02.jpg">
+                        <!-- ...and change src like src="path_to_photo.jpg"... -->
+                        <div class="caption-about">
+                            A little about me...I'm a recent graduate of Judson University, just outside Chicago, IL
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/03.jpg">
+                        <div class="caption-about">
+                            I have two younger sisters, and they're awesome! I'm the one in the middle…
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/04.jpg">
+                        <div class="caption-about">
+                            So in case you're wondering, I'm also recently married!
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/05.jpg">
+                        <div class="caption-about">
+                            I met my husband 6 years ago and absolutely love him!
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/09.jpg">
+                        <div class="caption-about">
+                            We're kinda crazy,
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/06.jpg">
+                        <div class="caption-about">
+                            And love adventures, we even found where Bigfoot lives!
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/08.jpg">
+                        <div class="caption-about">
+                            I love being with my friends, dancing, reading, biking,
+                            trying new things, any thing active and travel.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about/07.jpg">
+                        <div class="caption-about">
+                            I've had all sorts of crazy jobs and loved all of them,
+                            but my favorite job isn't a job, it's a passion, it's a
+                            love and it's something I'm grateful I get to do every day for people like you!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="right carousel-control fill" href="#carousel-example-generic" data-slide="next">
+                </a>
+            </div>
+        </div>
+        <article class="padd">
+            <h3>Who we are, what we believe:</h3>
+            <p>
+                I started working as a photographer a few years ago and fell in love!
+            </p>
+            <p>
+                Rachael Watson Photography Inc. was something I didn't even dream of
+                starting. A graduate of Judson University with knowledge in my head
+                and shoes on my feet, I knew a lot, but didn't know where I was going.
+                What I did know what that there was something out there waiting for me.
+                I finally decided to take the plunge. Photography has been a part of my
+                life as long as I can remember. Growing up I took countless rolls of film
+                and finally, my first digital camera! Reflecting on these things I
+                remembered what my mentor told me all those years ago...passion + gifts =
+                calling, so I took the things I knew and loved, then took a leap of faith.
+            </p>
+            <p>
+                Photography is something I love because of the people I get to meet and the
+                memories I get to capture for them, the love, joy and excitement of new beginnings.
+            </p>
+            <h4>Our Values:</h4>
+            <p>
+                Rachael Watson Photography Inc. has three core values I have built my company
+                on, Quality Work, Great Service and <a href="#give">Giving Back</a>. I work my hardest so you end
+                up with the best quality images, images you will be excited to share with your
+                friends and loved ones.
+            </p>
+            <a name="give"></a>
+            <h4>Giving Back:</h4>
+            <p>
+                What I'm most proud of though, is our commitment to giving back to the local community.
+            </p>
+            <p>
+                When you use Rachael Watson Photography Inc., you give back to the community
+                around you. From the start Rachael Watson Photography Inc. is committed to
+                giving back 10% of sales to local organizations working with youth. Here are
+                two of the organizations Rachael Watson Photography Inc. gives to.
+            </p>
+            <h4>Outreach Community Ministries -Carol Stream, IL</h4>
+            <p>
+                Mission Statement: "To restore hope and provide
+                opportunities for people to become all that God intends them to be;
+                partnered with the local church to put Christian faith into action
+                through service to the community."
+            </p>
+            <h4>Triple Threat Mentoring -Aurora, IL</h4>
+            <p>
+                Mission Statement: "To empower urban youth to realize
+                their potential and inspire volunteers to leave a lasting legacy. We're not
+                just a youth organization. We're an organization that facilitates relationships
+                between youth and volunteers through our passion-based programs."
+            </p>
+            <h4>Looking to the Future</h4>
+            <p>My hope is that as Rachael Watson Photography expands, so can our impact in
+                local communities. My hope is that in the future we can give not only to
+                these and other local organizations, but also that Rachael Watson Photography
+                Inc. would be able to personally come alongside adolescents and holistically
+                mentor the next generation too.
+            </p>
+            <p>
+                We want to be part of investing in the future. If you know of an organizations
+                whose primary focus is working with, investing in and doing life with youth,
+                pass their information along to us! We would love to learn more about them and
+                maybe they can become one of the organizations we donate to.
+            </p>
+        </article>
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        Rachael Watson Photography Inc.
+    </div>
+</footer>
+<script type="text/javascript">
+    disableSelection(document.body)
+</script>
+</body>
+</html>
